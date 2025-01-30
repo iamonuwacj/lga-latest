@@ -2,7 +2,7 @@
 
 const Banner = () => {
   return (
-    <section data-aos={"slide-left"} data-aos-delay={0}>
+    <section data-aos={"fade-up"} data-aos-delay={0}>
         <div className="bg-blue-950 flex lg:justify-center text-center flex-wrap p-[10%] lg:p-[5%] 
           lg:items-center py-16 text-2xl gap-10 text-white">
             <h1 className="text-3xl">Apply To Become Our City Police Officer!</h1>
