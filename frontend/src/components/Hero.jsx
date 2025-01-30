@@ -67,7 +67,7 @@ const Hero = () => {
                 <div key={data.id} className={`w-full`}
                     >
                     <div className="flex items-center flex-wrap-reverse w-full lg:p-[5%] p-[10%] sm:pb-0 
-                        pb-10" 
+                        pb-10 h-[90vh]"
                         style={{backgroundImage: `url(${data.bg})`}}>
                         <div className="w-full md:w-1/2 space-y-4">
                             <h1 className="space-y-2">
@@ -78,17 +78,17 @@ const Hero = () => {
                                 {data.description}
                             </p>
                             <div className="mt-10">
-                                <a className="bg-red-800
+                                <a href="/about-us" className="bg-red-800
                                     rounded-full py-2 px-4 hover:scale-105 hover:bg-blue-800">
                                     Learn More
                                 </a>
                             </div>
                         </div>
 
-                        <div className="w-full md:w-1/2">
+                        {/* <div className="w-full md:w-1/2">
                             <img src={data.img} alt="" className="object-contain mx-auto h-[300px]
                             sm:h-[70vh] w-[300px] sm:w-[450px] sm:scale-105 lg:scale-125"/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             )}

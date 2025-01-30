@@ -6,6 +6,7 @@ import Carrers from './pages/Carrers'
 import Administration from './pages/Administration'
 import Governor from './pages/Governor'
 import Policy from './pages/Policy'
+import AboutUs from './pages/Aboutus'
 
 
 
@@ -42,6 +43,14 @@ function App() {
         <Route
           path='/privacy-policy'
           element={<Policy />}
+        />
+        <Route
+          path='/about-us'
+          element={<AboutUs />}
+        />
+        <Route
+          path='/departments'
+          element={<h1>Departments</h1>}
         />
       </Routes>
     </>

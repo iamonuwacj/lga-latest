@@ -26,11 +26,11 @@ const Header = () => {
 
 					<div className="group-hover:block absolute hidden h-auto opacity-1 py-6 z-50">
 
-						<ul className="w-52 p-3 shadow bg-yellow-700 text-white top-0 rounded">
+						<ul className="w-52 p-3 shadow bg-white text-green-600 top-0 rounded">
 							<li className="py-1 hover:ml-3 hover:text-gray-500 flex gap-2 items-center group">
 								<NavLink to={"/administration"}>Administration</NavLink></li>
 							<li className="py-1 hover:ml-3 hover:text-gray-500">
-								<NavLink to={"/about-governor"}>Governor</NavLink></li>
+								<NavLink to={"/about-governor"}>Chairman</NavLink></li>
 							<li className="py-1 hover:ml-3 hover:text-gray-500">
 								<NavLink to={"/privacy-policy"}>Privacy Policy</NavLink></li>
 						</ul>
@@ -44,7 +44,7 @@ const Header = () => {
 
 					<div className="group-hover:block absolute hidden h-auto opacity-1 py-6 z-50">
 
-						<ul className="w-52 p-3 shadow bg-yellow-700 text-white top-0 rounded">
+						<ul className="w-52 p-3 shadow bg-white text-green-600 top-0 rounded">
 							<li className="py-1 hover:ml-3 hover:text-gray-500">
 								<NavLink>Economic Development</NavLink>
 							</li>

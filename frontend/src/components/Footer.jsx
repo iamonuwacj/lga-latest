@@ -65,12 +65,12 @@ const Footer = () => {
 
         <ul className="flex gap-10 mt-10 px-[10%] md:px-[5%] w-full flex-wrap justify-center
             items-center">
-            <li>Home</li>
-            <li>Governments</li>
-            <li>Departments</li>
-            <li>Services</li>
-            <li>Blog</li>
-            <li>Contacts</li>
+            <li><a href="/"></a>Home</li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/">Departments</a></li>
+            <li><a href="/carrers">Carrers</a></li>
+            <li><a href="/news">Blog</a></li>
+            <li><a href="/contact">Contacts</a></li>
         </ul>
 
         <hr className="mt-10"/>

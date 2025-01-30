@@ -2,13 +2,14 @@
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Blog = () => {
   return (
     <>
         <Header />
-        <div className="bg-green-300 h-80 w-full text-black p-[10%] lg:p-[5%] flex items-center">
+        <div className="bg-green-300 h-96 w-full p-[10%] lg:p-[5%] flex items-center
+            bg-[url(../../src/assets/images/bg-breadcrumbs.jpg)] text-white">
             <h1 className="text-5xl font-semibold">News</h1>
         </div>
 

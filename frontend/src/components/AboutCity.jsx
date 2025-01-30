@@ -73,7 +73,8 @@ const AboutCity = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start text-white text-center">
-                <a href="" className="hover:bg-green-600 mt-5 block bg-green-600 w-40 px-5 py-2 rounded-full">Learn More</a>
+                <a href="/about-us" className="hover:bg-green-600 mt-5 block bg-green-600 w-40 px-5 
+                py-2 rounded-full">Learn More</a>
             </div>
         </div>
 

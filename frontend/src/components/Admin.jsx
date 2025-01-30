@@ -72,7 +72,7 @@ const Admin = () => {
         </div>
 
         <div className="flex w-full text-white justify-center">
-            <a href="" className="block w-52 bg-green-700 text-center rounded-full py-3">
+            <a href="/administration" className="block w-52 bg-green-700 text-center rounded-full py-3">
                 View All Team
             </a>
         </div>
