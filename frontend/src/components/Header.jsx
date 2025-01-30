@@ -105,8 +105,6 @@ const Header = () => {
 					:
 					(<button className='lg:hidden flex' onClick={() => setToggle(true)}><Menu /></button>)
 			}
-			{/* <button className='lg:hidden flex' onClick={() => setToggle(!toggle)}><Menu /></button>
-			<button className='lg:hidden flex' onClick={() => setToggle(!toggle)}><X /></button> */}
 		</div>
 	</div>
   )
