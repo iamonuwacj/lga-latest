@@ -60,8 +60,7 @@ const Header = () => {
 			{
 				toggle && (
 					<ul className="absolute top-[3.4rem] sm:top-[4rem] w-2/3 sm:w-1/2 bg-[#003758]
-						left-0  py-10
-						text-left space-y-5 lg:hidden">
+						left-0  py-10 h-screen text-left space-y-5 lg:hidden">
 						<li className='bg-green-700 p-3'><NavLink to={"/"}>Home</NavLink></li>
 						<li className='hover:bg-green-700 p-3'><NavLink>About</NavLink></li>
 						<li className="group relative hover:bg-green-700 p-3" onClick={() => setDropdown(!dropdown)}
