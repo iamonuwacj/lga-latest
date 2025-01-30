@@ -63,7 +63,8 @@ const Footer = () => {
             </div>
         </div>
 
-        <ul className="flex gap-10 mt-10 px-[10%] md:px-[5%]">
+        <ul className="flex gap-10 mt-10 px-[10%] md:px-[5%] w-full flex-wrap justify-center
+            items-center">
             <li>Home</li>
             <li>Governments</li>
             <li>Departments</li>
