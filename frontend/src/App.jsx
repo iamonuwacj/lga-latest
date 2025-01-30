@@ -1,4 +1,7 @@
 import { Routes, Route} from 'react-router-dom'
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from 'react';
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Blog from './pages/Blog'
@@ -12,6 +15,16 @@ import AboutUs from './pages/Aboutus'
 
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <>
@@ -51,6 +64,10 @@ function App() {
         <Route
           path='/departments'
           element={<h1>Departments</h1>}
+        />
+        <Route
+          path='/cms'
+          element={<h1>CMS</h1>}
         />
       </Routes>
     </>

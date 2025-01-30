@@ -2,7 +2,7 @@ import { User, Users, CalendarDays } from "lucide-react"
 
 const LgaStats = () => {
   return (
-    <section className="w-full bg-gray-300 lg:p-[5%] p-[10%]">
+    <section className="w-full bg-gray-300 lg:p-[5%] p-[10%]" data-aos={"zoom-in"} data-aos-delay={0}>
         <div className="flex w-full justify-between items-center flex-wrap">
             <div className="flex justify-between flex-wrap mt-10 space-y-4">
                 <div className="w-full md:w-1/4 flex items-center justify-center flex-col space-y-1">

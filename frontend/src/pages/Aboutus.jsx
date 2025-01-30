@@ -10,7 +10,7 @@ const AboutUs = () => {
             <h1 className="text-5xl font-semibold">About Us</h1>
         </div>
 
-        <div className="p-[10%] lg:p-[5%] space-y-10">
+        <div className="p-[10%] lg:p-[5%] space-y-10" data-aos={"fade-up"} data-aos-delay={600}>
             <header className="font-bold text-3xl">
                 <h1>Overview</h1>
             </header>

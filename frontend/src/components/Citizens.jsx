@@ -2,7 +2,7 @@
 
 const Citizens = () => {
   return (
-    <section className="px-[10%] py-[20%] lg:p-[5%]">
+    <section className="px-[10%] py-[20%] lg:p-[5%]" data-aos={"fade-up"} data-aos-delay={600}>
         <div className="space-y-16">
             <header className="text-center font-semibold text-3xl">
                 <h1>What Our Citizens Say</h1>
