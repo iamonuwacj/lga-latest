@@ -94,7 +94,7 @@ const Header = () => {
 							</li>
 						)}
 					
-						<li className='hover:bg-green-700 p-3'><NavLink to={"/news"} reloadDocument>News</NavLink></li>
+						<li className='hover:bg-green-700 p-3'><NavLink to={"/news"}>News</NavLink></li>
 
 						<li className="relative block hover:bg-green-700 p-3"><NavLink to={"/contact"}>Contacts</NavLink></li>
 					</ul>
