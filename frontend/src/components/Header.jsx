@@ -73,9 +73,9 @@ const Header = () => {
 						{ dropdown && (
 							<li className='relative px-3'>
 								<ul className='space-y-6'>
-									<li className='hover:ml-16'><NavLink to={"/adminstration"}>Administration</NavLink></li>
+									<li className='hover:ml-16'><NavLink to={"/administration"}>Administration</NavLink></li>
 									<li className='hover:ml-16'><NavLink to={"/about-governor"}>About Chairman</NavLink></li>
-									<li className='hover:ml-16'><NavLink to={"/privacy-polic"}>Privacy Policy</NavLink></li>
+									<li className='hover:ml-16'><NavLink to={"/privacy-policy"}>Privacy Policy</NavLink></li>
 								</ul>
 						</li>
 						)}
