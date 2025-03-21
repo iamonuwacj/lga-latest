@@ -53,15 +53,9 @@ const Hero = () => {
         pauseOnFocus: true,
     };
 
-    // const myStyle = {
-    //     backgroundImage: `url(${slide})`,
-    //     height: "100vh",
-    //     backgroundSize: "cover",
-    //     backgroundRepeat: "no-repeat"
-    // }
 
   return (
-    <div className="w-full relative z-0">
+    <div className="w-full relative z-10" id="hero">
         <Slider {...settings}>
             {ImageList.map((data) =>
                 <div key={data.id} className={`w-full`}

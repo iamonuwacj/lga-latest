@@ -41,10 +41,10 @@ function App() {
           path='/news'
           element={<Blog />}
         />
-        <Route
+        {/* <Route
           path='/carrers'
           element={<Carrers />}
-        />
+        /> */}
         <Route
           path='/administration'
           element={<Administration />}
@@ -54,7 +54,7 @@ function App() {
           element={<Governor />}
         />
         <Route
-          path='/privacy-policy'
+          path='/projects'
           element={<Policy />}
         />
         <Route

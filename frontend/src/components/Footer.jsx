@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <section id="footer" className="w-full pb-2  bg-blue-950 text-gray-400">
+    <section id="footer" className="w-full pb-2  bg-blue-950 text-gray-400 relative">
         <div className="flex w-full flex-wrap justify-between space-y-10 lg:space-y-0 px-[10%] md:px-[5%]
             pt-10">
             <div className="lg:w-[30%] w-full space-y-10">
@@ -75,6 +75,8 @@ const Footer = () => {
 
         <hr className="mt-10"/>
         <p className="mt-10 text-center">© 2025 All Rights Reserved. Privacy Policy</p>
+        <a href="#" className="fixed bg-blue-950 hover:bg-red-500 rounded-full h-12 w-12
+            bottom-5 right-3 z-0"></a>
     </section>
   )
 }

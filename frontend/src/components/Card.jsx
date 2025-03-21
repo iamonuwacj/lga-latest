@@ -4,16 +4,15 @@ import { Link } from "react-router-dom"
 
 const Card = ({title, author , date}) => {
   return (
-    <div className="w-full md:w-[48%] md:mb-10 ">
-        <div className="bg-black w-full h-[400px] rounded-lg">
+    <div className="w-full lg:w-[32%] space-y-10 lg:space-y-0 ">
+        <div className="bg-black md:w-3/4 lg:w-full h-[400px] rounded-lg">
             <img src="" alt="" />
         </div>
         <div className="pt-4 space-y-5">
-            <h3 className="hover:text-blue-700 text-2xl"><Link>{title}</Link></h3>
+            <h3 className="hover:text-blue-700 text-xl"><Link>{title}</Link></h3>
             <div className="flex gap-5 items-center">
                 <p className="border-r-2 pr-3">{author}</p>
-                <p className="border-r-2 pr-3">{date}</p>
-                <p className="hover:text-blue-700"><Link>News</Link></p>
+                <p>{date}</p>
             </div>
 
             <p>

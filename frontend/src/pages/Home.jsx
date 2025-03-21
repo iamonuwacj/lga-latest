@@ -7,12 +7,13 @@ import Bills from '../components/Bills'
 import AboutCity from '../components/AboutCity'
 import Banner from '../components/Banner'
 import Admin from '../components/Admin'
-import Government from '../components/Government'
+// import Government from '../components/Government'
 import Citizens from '../components/Citizens'
 import Support from '../components/Support'
 import LatestNews from '../components/LatestNews'
 import NewsLetter from '../components/NewsLetter'
 import Footer from '../components/Footer'
+import AboutChairman from '../components/AboutChairman'
 
 
 const Home = () => {
@@ -23,16 +24,17 @@ const Home = () => {
         <Header />
         <Hero />
         <LgaStats />
-        <Departments />
+        <AboutChairman />
         <Bills />
-        <AboutCity />
+        <Departments />
         <Banner />
         <Admin />
-        <Government />
+        {/* <Government /> */}
         <Citizens />
         <Support />
+        <AboutCity />
         <LatestNews />
-        <NewsLetter />
+        {/* <NewsLetter /> */}
         <Footer />
     </div>
   )

@@ -1,17 +1,41 @@
+import { useState } from "react"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import ProjectCard from "../components/ProjectCard"
+
+
+const modal = [
+    {title: "All Projects"},
+    {title: "Ongoing Projects"},
+    {title: "Pending Projects"},
+    {title: "Completed Projects"},
+]
 
 
 const Policy = () => {
+
+    // const [completed, setCompleted] = useState(true)
+    // const [ongoing, setOngoing] = useState(false)
+    // const [pending, setPending] = useState(false)
+    // const [allProjects, setAllProjects] = useState(false)
+
+    const [hoverState, setHoverState] = useState({
+        completed: false,
+        ongoing: false,
+        pending: false,
+        allProjects: true
+    })
+
+
   return (
     <div>
         <Header />
         <div className="bg-green-300 h-96 w-full p-[10%] lg:p-[5%] flex items-center
             bg-[url(../../src/assets/images/bg-breadcrumbs.jpg)] text-white">
-            <h1 className="text-5xl font-semibold">Privacy Policy</h1>
+            <h1 className="text-5xl font-semibold">Projects</h1>
         </div>
 
-        <div className="p-[10%] lg:p-[5%] space-y-10">
+        {/* <div className="p-[10%] lg:p-[5%] space-y-10">
             <div className="space-y-5">
                 <header className="font-bold text-2xl"><h2>General Information</h2></header>
                 <p>
@@ -112,6 +136,126 @@ const Policy = () => {
                 </p>
             </div>
 
+
+        </div> */}
+
+        <div className="w-full lg:px-[5%] px-[10%] py-3 flex flex-col space-y-10">
+            <ul className="flex items-center gap-9 w-full lg:w-[80%] mx-auto lg:justify-between cursor-pointer">
+                <li className={`hover:text-green-300 hover:underline ${hoverState.allProjects && "text-green-400 "} text-sm md:text-lg`} onClick={() => setHoverState({allProjects:true, pending:false, completed:false, ongoing: false})}>All Projects</li>
+                <li className={`hover:text-green-300 hover:underline ${hoverState.ongoing && "text-green-400 "} text-sm md:text-lg`} onClick={() => setHoverState({allProjects:false, pending:false, completed:false, ongoing: true})}>Ongoing Projects</li>
+                <li className={`hover:text-green-300 hover:underline ${hoverState.completed && "text-green-400 "} text-sm md:text-lg`} onClick={() => setHoverState({allProjects:false, pending:false, completed:true, ongoing: false})}>Completed Projects</li>
+                <li className={`hover:text-green-300 hover:underline ${hoverState.pending && "text-green-400 "} text-sm md:text-lg`} onClick={() => setHoverState({allProjects:false, pending:true, completed:false, ongoing: false})}>Pending Projects</li>
+                {/* {
+                    modal.map((item, index) => <li key={index} className="text-sm md:text-lg hover:text-green-400 hover:underline">
+                        {item.title}
+                    </li>
+                    )
+                } */}
+            </ul>
+
+            {/* All projects */}
+            {
+                hoverState.allProjects && (
+                <div className="w-full lg:p-8 flex flex-wrap justify-between transition-all overflow-hidden">
+                    <ProjectCard
+                        status={"completed"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                    <ProjectCard
+                        status={"pending"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                    <ProjectCard
+                        status={"completed"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                    <ProjectCard
+                        status={"ongoing"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                    <ProjectCard
+                        status={"ongoing"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                    <ProjectCard
+                        status={"ongoing"}
+                        dateCompleted={"2020"}
+                        satrted={"2019"}
+                        title={"Dual fly over"}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                    />
+                </div>
+                )
+            }
+
+            {/* completed projects */}
+            {
+                hoverState.completed && <div className="w-full lg:p-8 flex flex-wrap justify-between">
+                    <ProjectCard 
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                    <ProjectCard 
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                </div>
+            }
+
+            {/* pending projects */}
+            {
+                hoverState.pending && <div  className="w-full lg:p-8 flex flex-wrap justify-between">
+                    <ProjectCard 
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                    <ProjectCard 
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                </div>
+            }
+
+            {/* Ongoing Projects */}
+            {
+                hoverState.ongoing && <div className="w-full lg:p-8 flex flex-wrap justify-between">
+                    <ProjectCard
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                    <ProjectCard
+                        dateCompleted={2020}
+                        satrted={2018}
+                        desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores, minus vitae nisi, ex, sint nihil reiciendis officia consequatur cupiditate in sequi laborum qui? Dolor repudiandae nostrum nemo voluptas veritatis."}
+                        title={"Dual fly over"}
+                    />
+                </div>
+            }
 
         </div>
         <Footer />

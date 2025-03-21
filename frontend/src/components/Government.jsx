@@ -4,7 +4,7 @@ const Government = () => {
     return (
       <section className="p-[10%] space-y-8 bg-gray-300">
             <header className="text-center space-y-5">
-                <h1 className="text-3xl font-semibold">City Government</h1>
+                <h1 className="text-3xl font-semibold">Our Government</h1>
                 <p className="lg:w-2/3 mx-auto w-full">
                     Our government consists of different boards and departments that
                     work daily to make sure of the best conditions for our citizens and guests of the city.

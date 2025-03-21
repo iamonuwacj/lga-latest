@@ -9,9 +9,14 @@ const LatestNews = () => {
             <h2>Latest News</h2>
         </header>
 
-        <div className="flex flex-wrap w-full justify-between space-y-10 md:space-y-0">
+        <div className="flex flex-wrap w-full justify-between space-y-10 lg:space-y-0">
             <Card
                 title={"Interview With the Governor"}
+                author={"by Theresa Barnes"}
+                date={"Apr 21, 2019 at 12:05 pm"}
+            />
+            <Card 
+                title={"Freedom of Speech: Essential Principles"}
                 author={"by Theresa Barnes"}
                 date={"Apr 21, 2019 at 12:05 pm"}
             />
